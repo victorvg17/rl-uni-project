@@ -1,0 +1,43 @@
+Test 1:
+------------------------------------
+PPO discrete #12 with:
+('K_epochs', 10)
+('a_lr', 0.0046)
+('action_dim', 7)
+('action_std', 0.4)
+('alpha', 0.0060)
+('c_lr', 0.0002)
+('entropy_coeff', 0.0045)
+('episode', 3000)
+('eps_clip', 0.1)
+('epsilon', 0.7819)
+('hidden_unit', 256)
+('reward_func', 'carrot')
+('timesteps', 300)
+('trace_decay', 0.6543) 
+('update_timesteps', 1024)
+
+learning with a rapid increase in whole reward values
+************************************
+
+Test 2:
+------------------------------------
+PPO discrete #2 with:
+('K_epochs', 10)
+('a_lr', 0.0393)
+('action_dim', 5)
+('action_std', 0.1)
+('alpha', 0.0829)
+('c_lr', 0.0006)
+('entropy_coeff', 0.0060)
+('episode', 3000)
+('eps_clip', 0.1)
+('epsilon', 0.0983)
+('hidden_unit', 512)
+('reward_func', 'slow_rotation')
+('timesteps', 300)
+('trace_decay', 0.5331)
+('update_timesteps', 2048)
+
+slow increase and stock in region around 10 with low probability
+************************************

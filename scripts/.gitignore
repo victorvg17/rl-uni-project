@@ -1,0 +1,9 @@
+# python compiled files
+*.pyc
+
+# model weights
+models
+# result plots
+results
+# vscode files
+.vscode

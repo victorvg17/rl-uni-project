@@ -1,0 +1,204 @@
+Test 1:
+------------------------------------
+PPO continues #3 with:
+('K_epochs', 15)
+('a_lr', 0.0006)
+('action_dim', 3)
+('action_std', 0.1)
+('alpha', 0.0533)
+('c_lr', 0.0707)
+('entropy_coeff', 0.0493)
+('episode', 3000)
+('eps_clip', 0.1)
+('epsilon', 0.0499)
+('hidden_unit', 64)
+('reward_func', 'carrot')
+('timesteps', 600)
+('trace_decay', 0.1399)
+('update_timesteps', 512)
+
+A smooth increase in rewards. Chosen as a baseline
+************************************
+
+Test 2:
+------------------------------------
+PPO continues # 13 with:
+('K_epochs', 20)
+('a_lr', 0.0001)
+('action_dim', 7)
+('action_std', 0.4)
+('alpha', 0.0486)
+('c_lr', 0.0065)
+('entropy_coeff', 0.0569)
+('episode', 3000)
+('eps_clip', 0.1)
+('epsilon', 0.5318)
+('hidden_unit', 128)
+('reward_func', 'carrot')
+('timesteps', 400)
+('trace_decay', 0.3801)
+('update_timesteps', 2048)
+
+After 1500 episodes, there was a smooth increase in reward plot.
+************************************
+
+Test 3:
+------------------------------------
+PPO continues # 12 with:
+('K_epochs', 15)
+('a_lr', 0.0002)
+('action_dim', 7)
+('action_std', 0.4)
+('alpha', 0.0581)
+('c_lr', 0.0812)
+('entropy_coeff', 0.0846)
+('episode', 3000)
+('eps_clip', 0.5)
+('epsilon', 0.2986)
+('hidden_unit', 32)
+('reward_func', 'carrot')
+('timesteps', 200)
+('trace_decay', 0.8289)
+('update_timesteps', 128)
+
+Many up and down in reward plots.
+************************************
+
+Test 4:
+------------------------------------
+PPO continues # 6 with:
+('K_epochs', 20)
+('a_lr', 0.0001)
+('action_dim', 7)
+('action_std', 0.1)
+('alpha', 0.0941)
+('c_lr', 0.0013)
+('entropy_coeff', 0.0763)
+('episode', 3000)
+('eps_clip', 0.1)
+('epsilon', 0.3013)
+('hidden_unit', 64)
+('reward_func', 'slow_rotation')
+('timesteps', 400)
+('trace_decay', 0.3266)
+('update_timesteps', 128)
+
+Learning but not smoothly and sometimes it goes down to 0
+************************************
+
+Test 5:
+------------------------------------
+PPO continues # 22 with:
+('K_epochs', 5)
+('a_lr', 0.0001)
+('action_dim', 7)
+('action_std', 0.4)
+('alpha', 0.0900)
+('c_lr', 0.0001)
+('entropy_coeff', 0.0264)
+('episode', 3000)
+('eps_clip', 0.3)
+('epsilon', 0.3821)
+('hidden_unit', 128)
+('reward_func', 'slow_rotation')
+('timesteps', 400)
+('trace_decay', 0.5316)
+('update_timesteps', 128)
+
+More Learning in whole episodes but not smoothly. An average of 5
+************************************
+
+Test 6:
+------------------------------------
+PPO continues # 24 with:
+('K_epochs', 15)
+('a_lr', 0.0001)
+('action_dim', 7)
+('action_std', 0.3)
+('alpha', 0.0540)
+('c_lr', 0.0379)
+('entropy_coeff', 0.0185)
+('episode', 3000)
+('eps_clip', 0.4)
+('epsilon', 0.7331)
+('hidden_unit', 32)
+('reward_func', 'carrot')
+('timesteps', 400)
+('trace_decay', 0.0193)
+('update_timesteps', 512)
+
+continues Learning
+************************************
+
+
+Test 7:
+------------------------------------
+PPO continues # 31 with:
+('K_epochs', 15)
+('a_lr', 0.0001)
+('action_dim', 7)
+('action_std', 0.3)
+('alpha', 0.0540)
+('c_lr', 0.0379)
+('entropy_coeff', 0.0185)
+('episode', 3000)
+('eps_clip', 0.4)
+('epsilon', 0.7331)
+('hidden_unit', 32)
+('reward_func', 'carrot')
+('timesteps', 400)
+('trace_decay', 0.0193)
+('update_timesteps', 512)
+
+continues Learning - not perfect 
+************************************
+
+Test 8:
+------------------------------------
+PPO continues # 32 with:
+('K_epochs', 10)
+('a_lr', 0.0001)
+('action_dim', 5)
+('action_std', 0.1)
+('alpha', 0.0745)
+('c_lr', 0.0001)
+('entropy_coeff', 0.0367)
+('episode', 3000)
+('eps_clip', 0.3)
+('epsilon', 0.8052)
+('hidden_unit', 128)
+('reward_func', 'carrot')
+('timesteps', 300)
+('trace_decay', 0.1886)
+('update_timesteps', 2048)
+
+continues Learning - much better than Test 
+Update V1: By increasing the hidden_unit size to 256 was good/ increasing to 512 or 1024 did not work well
+Update V2: By increasing the timesteps to 500, did not work well.
+Update V3: By decreasing the timesteps to 200, did imporved in general values
+Update V4: Running on test reward function (defining wider range) -> start to rotate very fast
+Update V5: As per rendering, it rotate very fast, so penalize based on speed on reward v6
+
+************************************
+
+Test 9:
+------------------------------------
+PPO continues # 39 with:
+('K_epochs', 20)
+('a_lr', 0.00029729678287061475)
+('action_dim', 5)
+('action_std', 0.1)
+('alpha', 0.06225336527096912)
+('c_lr', 0.05217091912742605)
+('entropy_coeff', 0.09899652231807146)
+('episode', 3000)
+('eps_clip', 0.2)
+('epsilon', 0.7453215102240474)
+('hidden_unit', 64)
+('reward_func', 'slow_rotation')
+('timesteps', 400)
+('trace_decay', 0.4008737323711209)
+('update_timesteps', 1024)
+
+start learning from beginning but multiple drop during learning
+************************************
